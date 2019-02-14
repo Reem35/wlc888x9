@@ -1,10 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = ";";//حط هنا برفكس البوت حقك
+const prefix = ";";
 
-client.on('ready', () => {
-  client.user.setGame('Miittzz');
- })
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -79,4 +76,5 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {
     message.channel.send(`Changing The Avatar To :**${argresult}** `);
 }
 });
+
 client.login(process.env.BOT_TOKEN);//لا تعدل او تحط توكن بوتك فيها
