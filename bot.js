@@ -46,7 +46,7 @@ if (!channel) return;
 channel.send({embed : MoCodes});
 });
 const developers = ["512672135580221450"]
-const adminprefixe = ";";
+const adminprefixe = ".";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
