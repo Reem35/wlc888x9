@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const prefix = ";";//حط هنا برفكس البوت حقك
 
 client.on('ready', () => {
-  client.user.setGame('حط هہنٱ ٱڵشئ ٱڵي ٱڵبوت بيصير يڵعبهہ');
+  client.user.setGame('Miittzz');
  })
 
 client.on('ready', () => {
