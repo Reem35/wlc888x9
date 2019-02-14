@@ -67,7 +67,7 @@ client.on('guildMemberAdd',async member => {
           ctx.clip();
           ctx.drawImage(ava, 36, 21, 260, 260);
            
-const c = hero.channels.find('name', 'اسم الروم الي بيرحب فيه');
+const c = hero.channels.find('name', 'Welcome');
           c.sendFile(canvas.toBuffer());
  
 });
