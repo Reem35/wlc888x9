@@ -1,3 +1,20 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const prefix = ";";//حط هنا برفكس البوت حقك
+
+client.on('ready', () => {
+  client.user.setGame('Test');
+ })
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on('message', msg => {
+  if (msg.content === 'ping') {
+    msg.reply('Pong!');
+  }
+});
 client.on('guildMemberAdd',async member => {
   const Canvas = require('canvas');
   const jimp = require('jimp');
@@ -50,9 +67,12 @@ client.on('guildMemberAdd',async member => {
           ctx.clip();
           ctx.drawImage(ava, 36, 21, 260, 260);
            
-const c = hero.channels.find('name', '��� ����� ��� ����� ���');
+const c = hero.channels.find('name', 'اسم الروم الي بيرحب فيه');
           c.sendFile(canvas.toBuffer());
  
 });
 });
 });
+
+
+client.login(process.env.BOT_TOKEN);//لا تعدل او تحط توكن بوتك فيها
