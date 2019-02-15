@@ -24,7 +24,7 @@ client.on('message', msg => {
         .addField(':regional_indicator_n: :a: :m: :regional_indicator_e:  | ***الاسم*** :  ',`${member}`)
         .addField(':pencil:  | ***مرحبا بك في السيرفر***' , `***مرحبا بك في السيرفر,*** ${member}`)
         .addField(':id: | user :', "**[" + `${member.id}` + "]**" )
-                .addField('➡| ***انت العضو رقم***',`${member.guild.memberCount}`)
+                .addField('?| ***انت العضو رقم***',`${member.guild.memberCount}`)
                    .addField("***الاسم***:",`<@` + `${member.id}` + `>`, true)
                                       .addField(' ***الـسيرفر***', `${member.guild.name}`,true)
 .setImage('https://cdn.discordapp.com/attachments/445335688628666388/477469283878961160/gfd.jpg','https://cdn.discordapp.com/attachments/445335688628666388/477605580203098112/images.png','https://cdn.discordapp.com/attachments/445335688628666388/477608211197722634/images.png','https://cdn.discordapp.com/attachments/445335688628666388/477608355632775178/images.png')
@@ -50,22 +50,22 @@ client.on('message', message => {
       
   if (message.content.startsWith(adminprefix + 'ply')) {
     client.user.setGame(argresult);
-      message.channel.send(`**✅   ${argresult}**`)
+      message.channel.send(`**?   ${argresult}**`)
   } else 
      if (message.content === (adminprefix + "leave")) {
     message.guild.leave();        
   } else  
   if (message.content.startsWith(adminprefix + 'wt')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send(`**✅   ${argresult}**`)
+      message.channel.send(`**?   ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'ls')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
-      message.channel.send(`**✅   ${argresult}**`)
+      message.channel.send(`**?   ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'st')) {
     client.user.setGame(argresult, "https://www.twitch.tv/idk");
-      message.channel.send(`**✅**`)
+      message.channel.send(`**?**`)
   }
   if (message.content.startsWith(adminprefix + 'setname')) {
   client.user.setUsername(argresult).then
